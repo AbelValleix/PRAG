@@ -9,6 +9,7 @@ public class TemperatureType {
 
     public void setTemperature(double temperature) {
         if(temperature >-470 || temperature <338 )
+            // Une temperature "raisonnable" est définie dans cet intervalle, quelque soit son unité.
             this.temperature = temperature;
         else
             throw new IllegalArgumentException("Temperature incorrect");
