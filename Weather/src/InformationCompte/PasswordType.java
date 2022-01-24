@@ -12,8 +12,8 @@ public class PasswordType {
 
     public void setPassword(String password) {
 
-        if (password.length() < 16) {
-            //Le mot de passe doit faire moins de 16 caractères
+        if (password.length() < 32) {
+            //Le mot de passe doit faire moins de 32 caractères
             this.password = password;
         } else {
             throw new IllegalArgumentException("Password incorrect");
